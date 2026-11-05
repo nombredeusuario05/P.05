@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p.05</title>
+
+    <style>
+     
+     * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+     .eater-regular {
+         font-family: "Eater", serif;
+         font-weight: 400;
+         font-style: normal;
+     }
+       
+       
+       :root {
+            --primary-color: rgb(231, 107, 215);
+            --secondary-color: rgb(237, 213, 0);
+        }
+
+        section {
+            flex-grow: 1;
+        }
+
+        div section:first-child {
+            display: flex; direction: 
+            row; justify-content: 
+            center; align-items: center;
+            background-color: var(--primary-color);
+        }
+
+        div section:last-child {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            background-color: var(--secondary-color);
+        }
+
+        @media screen and (max-width: 600px) {
+            div {
+                flex-direction: column;
+            }
+        }
+div {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+    </style>
+</head>
+<body class="eater-regular">
+    <div>
+        <section>
+            <p>HOLAAAA</p>
+        </section>
+        <section>
+            <p>ADEUUUU</p>
+        </section>
+    </div>
+</body>
+</html>
